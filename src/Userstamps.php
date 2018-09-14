@@ -1,6 +1,6 @@
 <?php
 
-namespace Wildside\Userstamps;
+namespace Mazyvan\Userstamps;
 
 trait Userstamps {
 
@@ -28,12 +28,12 @@ trait Userstamps {
      */
     public static function registerListeners()
     {
-        static::creating('Wildside\Userstamps\Listeners\Creating@handle');
-        static::updating('Wildside\Userstamps\Listeners\Updating@handle');
+        static::creating('Mazyvan\Userstamps\Listeners\Creating@handle');
+        static::updating('Mazyvan\Userstamps\Listeners\Updating@handle');
 
         if (static::usingSoftDeletes()) {
-            static::deleting('Wildside\Userstamps\Listeners\Deleting@handle');
-            static::restoring('Wildside\Userstamps\Listeners\Restoring@handle');
+            static::deleting('Mazyvan\Userstamps\Listeners\Deleting@handle');
+            static::restoring('Mazyvan\Userstamps\Listeners\Restoring@handle');
         }
     }
 
