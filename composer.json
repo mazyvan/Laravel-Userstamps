@@ -1,6 +1,6 @@
 {
     "name": "mazyvan/userstamps",
-    "description": "A for from WildSide. Eloquent trait to automatically maintain created_by and updated_by (and deleted_by when using SoftDeletes) on your models",
+    "description": "A fork from WildSide. Eloquent trait to automatically maintain created_by and updated_by (and deleted_by when using SoftDeletes) on your models",
     "license": "MIT",
     "keywords": [
         "laravel",
