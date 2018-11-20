@@ -148,6 +148,6 @@ trait Userstamps {
             return auth() -> getProvider() -> getModel();
         }
 
-        return auth() -> guard() -> getProvider() -> getModel();
+        return auth() -> guard('web') -> getProvider() -> getModel();
     }
 }

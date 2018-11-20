@@ -1,6 +1,11 @@
 # Mazyvan/Userstamps
+### MAYBE UNSTABLE. READ BELOW
 
 **Warning**: This is a fork from WildSideUK/Laravel-Userstamps that doesn't fire the laravel "update" [events](https://laravel.com/docs/5.4/eloquent#events) on deletions. It's only purpouse is for the Virtuamx team to work with this lib while the WildSideUK team check for the [issue 23](https://github.com/WildSideUK/Laravel-Userstamps/issues/23). If they approve the pull request. This fork will be deprecated.
+
+**Stability Important Note**: I have experienced issues with this plugin using Passport. This issue is reported here -> https://github.com/WildSideUK/Laravel-Userstamps/issues/17 
+So I tried the solution of setting manually the `'web'` guard. This plugin also have that workaround.   
+I think you should not have problems unless you use different models for your 'web' and 'api' logins. That's my thoughts.
 
 Provides an Eloquent trait to automatically maintain created_by and updated_by (and deleted_by when using SoftDeletes) on your models.
 
